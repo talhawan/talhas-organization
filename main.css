@@ -29,7 +29,7 @@ a.copyright {
     margin-top: 48px;
 }
 
-#li-class {
+.li-class {
 	list-style-type: none;
 	float: right;
 	padding: 2px;
