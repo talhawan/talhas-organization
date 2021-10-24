@@ -1,0 +1,36 @@
+article {
+    margin: 20px 20px 30px 40px;
+    color: red
+}
+
+footer {
+    display: block;
+    margin-right: 12px;
+}
+article#article1 {
+    color: red;
+}
+
+img.logo {
+    height: 50px;
+    float: left;
+    margin-left: 707px;
+}
+
+a.copyright {
+    float: left;
+    margin-left: 43%;
+
+}
+
+.footer-links {
+    float: left;
+    margin-left: -130px;
+    margin-top: 48px;
+}
+
+#li-class {
+	list-style-type: none;
+	float: right;
+	padding: 2px;
+}
