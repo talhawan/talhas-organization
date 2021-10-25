@@ -13,10 +13,11 @@ body {
     width: 100%;
 }
 
-@media screen and (max-width:1920px) {
+@media screen and (max-width: 1920px) {
     body, html, body, h2, h1 {
         width: 98%;
     }
+
     #title {
         float: left;
         margin-left: 40%;
@@ -24,10 +25,11 @@ body {
     }
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width: 720px) {
     body, html, body, h2, h1 {
         width: 98%;
     }
+
     #title {
         float: left;
         margin-left: 40%;
@@ -55,11 +57,15 @@ li.nav-item {
 }
 
 /*Body and HTML*/
-html, body, h2, h1
-{
+html, body, h2, h1 {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center
+}
+
+h2 {
+    margin-bottom: 21px;
 }
 
 body {
@@ -87,6 +93,7 @@ footer {
     display: block;
     margin-right: 12px;
 }
+
 article#article1 {
     color: red;
 }
@@ -112,7 +119,7 @@ table td {
 }
 
 th {
-    text-align:left
+    text-align: left
 }
 
 td.title {
@@ -184,7 +191,7 @@ a:link, a:visited, a:active {
 
 a:hover {
     text-decoration: underline overline;
-    
+
 }
 
 a:active {
@@ -213,7 +220,7 @@ h1.title {
     padding: 10px 0 20px 5px
 }
 
-@media screen and (max-width:1920px) {
+@media screen and (max-width: 1920px) {
     h1.title {
         display: block;
         margin-left: 608px;
@@ -229,10 +236,10 @@ input[type=text] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
 
-  button {
-      width: 100%;
+button {
+    width: 100%;
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -240,7 +247,7 @@ input[type=text] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
 
 .formContact {
     border-radius: 5px;
@@ -250,7 +257,7 @@ input[type=text] {
 
 input[type=submit]:hover {
     background-color: #45a049;
-  }
+}
 
 textarea {
     width: 100%;
@@ -261,7 +268,7 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
-  }
+}
 
 /* Gallery */
 
