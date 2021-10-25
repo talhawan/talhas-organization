@@ -1,11 +1,40 @@
+:root {
+    --bg-table-stripe: #f6f6f5;
+    --b-table: #e3e3e2;
+    --caption: #242423;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-html {
+body {
     width: 100%;
 }
+
+@media screen and (max-width:1920px) {
+    body, html, body, h2, h1 {
+        width: 98%;
+    }
+    #title {
+        float: left;
+        margin-left: 40%;
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    body, html, body, h2, h1 {
+        width: 98%;
+    }
+    #title {
+        float: left;
+        margin-left: 40%;
+        padding-bottom: 25px;
+    }
+}
+
 
 /* Navbar */
 nav.navbar {
@@ -43,6 +72,12 @@ p, h1 {
     margin-left: 100px;
 }
 
+p {
+    text-align: justify;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
 article {
     margin: 20px 20px 30px 40px;
     color: red
@@ -56,11 +91,85 @@ article#article1 {
     color: red;
 }
 
+#title {
+    float: left;
+    margin-left: 40%;
+    padding-bottom: 25px;
+}
+
+
+/* Table Layout */
+table {
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    table-layout: fixed;
+}
+
+table td {
+    padding: 10px;
+}
+
+th {
+    text-align:left
+}
+
+td.title {
+    font-weight: bold;
+}
+
+td.title2 {
+    font-weight: bold;
+    padding-bottom: 13px;
+}
+
+table caption {
+    padding: 0 0 30px 0;
+}
+
+tbody {
+    font-size: 12px;
+}
+
+td.text {
+    padding: 0;
+    margin: 0;
+}
+
+td.textRight {
+    padding: 0 0 42px 0;
+}
+
+td.textMid {
+    padding: 1px 1px 0 0;
+}
+
+td:nth-child(1) {
+    width: 33.33%;
+    padding: 0;
+    text-align: left;
+}
+
+/*
+td:nth-child(2) {
+    width: 33.33%;
+    padding: 0;
+    text-align: left;
+}
+
+td:nth-child(3) {
+    width: 33.33%;
+    padding: 0;
+    text-align: left;
+}
+*/
+
+
 img.logo {
     height: 50px;
-    float: left;
-    margin-left: 720px;
-    margin-top: 175px;
+    float: right;
+    margin-top: 210px;
 }
 
 a.copyright {
@@ -89,12 +198,10 @@ a:active {
 }
 
 ul.ul-footer {
-    display: inline-block;
-    display: -webkit-inline-box;
+    display: inline-flex;
     list-style-type: none;
     padding: 20px;
     margin-top: 204px;
-    margin-left: -195px;
 }
 
 li.li-footer {
@@ -102,9 +209,15 @@ li.li-footer {
 }
 
 h1.title {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    margin-left: 608px;
+    float: right;
+    padding: 10px 0 20px 5px
+}
+
+@media screen and (max-width:1920px) {
+    h1.title {
+        display: block;
+        margin-left: 608px;
+    }
 }
 
 /* Form to Contact Us */
