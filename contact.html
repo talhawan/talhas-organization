@@ -8,88 +8,135 @@
 
 <head>
     <!-- Metas and Title of Website, also links of stylesheet -->
-    <meta charset="utf-8" /> <!-- Set the charset to UTF-8-->
+    <meta charset="utf-8"/> <!-- Set the charset to UTF-8-->
     <title>Talha's Organization - Contact</title> <!-- Title -->
     <link rel="stylesheet" href="main.css"> <!-- CSS link file -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <header>
-        <!--  These are the different page sections you can navigate to.  -->
-        <nav class="navbar">
-            <div class="container-fluid">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
+<header>
+    <!--  These are the different page sections you can navigate to.  -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="gallery.html">Gallery</a>
-                  </li>
-                </ul>
-            </div>
-          </nav>
-    </header>
-        <!-- Articles of body of website -->
-    <section> <!-- A new section to tell the content-->
-            <h1 class="title"> Get in touch </h1> <!-- h1 text -->
-            <div class="formContact">
-            <form>
-                <label for="eaddress" class="form-label">Email address</label>
-                <input type="text" id="eaddress" name="email" placeholder="Your email here...">
-
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" id="subject" placeholder="The subject of your email">
-
-                <label for="message" class="form-label">Your message</label>
-                <textarea name="textarea" id="message" placeholder="Your message here..." rows="10" cols="50">Your message here</textarea>
-              
-              <button type="submit" value="Submit">Submit</button>
-            </form>
-          </div>
-    </section>
-
-    <table>
-        <caption>Find us on our social media. </caption>
-        <thead>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row"><a href="#">Facebook</a></th>
-            <th scope="row"><a href="#">Instagram</a></th>
-            <th scope="row"><a href="#">Twitter</a></th>
-        </tr>
-        </tbody>
-    </table>
-    <!-- Start of Footer 
-    Here is the logo, the school name, and the navigation links -->
-    <footer>
-        <img class="logo" src="media/link_list_1371863599.img.png" alt="logo">
-        <div class="navigation-footer">
-            <ul class="ul-footer">
-                <li class="li-footer"><a href="index.html">Home</a></li>
-                <li class="li-footer"><a href="about.html">About</a></li>
-                <li class="li-footer"><a href="contact.html">Contact</a></li>
-                <li class="li-footer"><a href="services.html">Services</a></li>
-                <li class="li-footer"><a href="gallery.html">Gallery</a></li>
+                </li>
             </ul>
         </div>
-        <a href="#" class="copyright">2021 &copy; Mota's Nonprofit Organization</a> <!-- Copyrights and company name -->
-    </footer> <!--End of footer -->
+    </nav>
+</header>
+<!-- Articles of body of website -->
+<section> <!-- A new section to tell the content-->
+    <h1 class="title"> Get in touch </h1> <!-- h1 text -->
+</section>
+
+<section>
+    <section>
+        <div class="listing-hero">
+            <div class="hero-heading">
+                <div class="hero-large">Contact Us.</div>
+                <div class="hero-text"><i>Got any Questions? Feel free to ask </i></div>
+            </div>
+        </div>
+
+        <div class="container-contact">
+            <div class="wrap-contact">
+
+                <form name="contact" class="contact-form validate-form" method="post" action="/response_page.php">
+                    <div class="wrap-input validate-input" data-validate="Please enter your name">
+                        <label>
+                            <input class="input" type="text" name="name" required placeholder="Full Name">
+                        </label>
+                    </div>
+                    <div class="wrap-input validate-input" data-validate="Please enter your email">
+                        <label>
+                            <input class="input" type="text" name="email" required placeholder="E-mail">
+                        </label>
+                    </div>
+                    <div class="wrap-input validate-input" data-validate="Please enter your message">
+                        <label>
+                            <textarea class="input" required type="text" name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+                    <label>
+                        <select name="citys" required class="wrap-input">
+                            <option value="1">Choose you City</option>
+                            <option value="2">New York</option>
+                            <option value="3">Miami</option>
+                            <option value="4">Washigton</option>
+                            <option value="5">Detroid</option>
+                        </select>
+                    </label>
+                    <label for="rdo1" class="radio-label"><span class="radio-border">I agree to the Terms of Service</span>
+                        <input type=radio id="rdo1" required class="radio-input" name="radio-group">
+                    </label>
+
+                    <div class="container-contact-form-btn">
+                        <button type="submit" class="contact-form-btn">
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                    <div class="grid-container">
+                        <div class="item1 left-align"><i class="fa fa-lg fa-map-marker-alt"></i> 4517 Washington Ave,
+                            Manchester, Kentucky 39495
+                        </div>
+                        <div class="item4 right-align"><i class="fa fa-lg fa-phone"></i> (123) 456-7890<br>(123)
+                            456-7890
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+</section>
+
+<table>
+    <caption>Find us on our social media.</caption>
+    <thead>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row"><a href="#">Facebook</a></th>
+        <th scope="row"><a href="#">Instagram</a></th>
+        <th scope="row"><a href="#">Twitter</a></th>
+    </tr>
+    </tbody>
+</table>
+<!-- Start of Footer
+Here is the logo, the school name, and the navigation links -->
+<footer>
+    <img class="logo" src="media/link_list_1371863599.img.png" alt="logo">
+    <div class="navigation-footer">
+        <ul class="ul-footer">
+            <li class="li-footer"><a href="index.html">Home</a></li>
+            <li class="li-footer"><a href="about.html">About</a></li>
+            <li class="li-footer"><a href="contact.html">Contact</a></li>
+            <li class="li-footer"><a href="services.html">Services</a></li>
+            <li class="li-footer"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <a href="#" class="copyright">2021 &copy; Mota's Nonprofit Organization</a> <!-- Copyrights and company name -->
+</footer> <!--End of footer -->
 </body> <!-- End of website content-->
 
 
